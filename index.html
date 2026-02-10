@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serenesymphony</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-main: #0f172a;
+            --bg-soft: #111827;
+            --accent: #a5b4fc;
+            --text-main: #e5e7eb;
+            --text-muted: #9ca3af;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: radial-gradient(circle at top, #1e293b, var(--bg-main));
+            color: var(--text-main);
+            line-height: 1.7;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(8px);
+            z-index: 100;
+        }
+
+        nav h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+            color: var(--accent);
+        }
+
+        nav a {
+            color: var(--text-main);
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        header {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        header h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            max-width: 650px;
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        section {
+            padding: 5rem 10%;
+        }
+
+        section h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            color: var(--accent);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 2rem;
+        }
+
+        .box {
+            background: rgba(255, 255, 255, 0.04);
+            padding: 2rem;
+            border-radius: 16px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .box:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(165, 180, 252, 0.25);
+        }
+
+        .box h4 {
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--text-main);
+        }
+
+        .box p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        footer {
+            background: var(--bg-soft);
+            padding: 2rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        footer span {
+            color: var(--accent);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <h1>Serenesymphony</h1>
+        <div>
+            <a href="#about">Tentang</a>
+            <a href="#philosophy">Filosofi</a>
+            <a href="#creations">Karya</a>
+            <a href="#contact">Kontak</a>
+        </div>
+    </nav>
+
+    <header>
+        <h2>Serenesymphony</h2>
+        <p>
+            Serenesymphony adalah perwujudan harmoni dan ketenangan—sebuah
+            simfoni lembut yang mengalir dari keheningan, emosi, dan keindahan
+            yang sederhana.
+        </p>
+    </header>
+
+    <section id="about">
+        <h3>Tentang Serenesymphony</h3>
+        <p>
+            Serenesymphony lahir dari keinginan untuk menciptakan ruang
+            reflektif melalui seni. Nama ini melambangkan alunan yang tenang,
+            tersusun rapi, namun sarat makna.
+        </p>
+        <p>
+            Ia bukan hanya tentang musik, tetapi tentang pengalaman—sebuah
+            perjalanan batin yang lembut dan mendalam.
+        </p>
+    </section>
+
+    <section id="philosophy">
+        <h3>Filosofi Inti</h3>
+        <div class="grid">
+            <div class="box">
+                <h4>🎼 Harmoni</h4>
+                <p>Keseimbangan antara suara, rasa, dan keheningan.</p>
+            </div>
+            <div class="box">
+                <h4>🌿 Ketenangan</h4>
+                <p>Memberi ruang untuk bernapas di tengah dunia yang bising.</p>
+            </div>
+            <div class="box">
+                <h4>✨ Keindahan</h4>
+                <p>Menemukan makna dalam kesederhanaan dan emosi.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="creations">
+        <h3>Karya & Ekspresi</h3>
+        <div class="grid">
+            <div class="box">
+                <h4>Musik</h4>
+                <p>Komposisi ambient, piano lembut, dan simfoni modern.</p>
+            </div>
+            <div class="box">
+                <h4>Tulisan</h4>
+                <p>Puisi dan refleksi tentang sunyi, waktu, dan perasaan.</p>
+            </div>
+            <div class="box">
+                <h4>Visual</h4>
+                <p>Estetika minimalis yang menenangkan dan bermakna.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h3>Hubungi</h3>
+        <p>
+            Serenesymphony terbuka untuk kolaborasi, dialog, dan ide kreatif.
+        </p>
+        <p>
+            Email: <strong>serenesymphony@email.com</strong><br>
+            Media Sosial: <strong>@serenesymphony</strong>
+        </p>
+    </section>
+
+    <footer>
+        © 2026 <span>Serenesymphony</span> — Where silence becomes music.
+    </footer>
+
+</body>
+</html>
